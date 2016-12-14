@@ -1,0 +1,80 @@
+//
+//  AsvhiTeacher-Prefix.pch
+//  
+//
+//  Created by Prem Kumar on 23/11/16.
+//
+//
+
+#ifndef AsvhiTeacher_Prefix_pch
+#define AsvhiTeacher_Prefix_pch
+
+
+#define IS_IPHONE_4_OR_LESS (IS_IPHONE && SCREEN_MAX_LENGTH < 568.0)
+#define IS_IPHONE_5 (IS_IPHONE && SCREEN_MAX_LENGTH == 568.0)
+#define IS_IPHONE_6 (IS_IPHONE && SCREEN_MAX_LENGTH == 667.0)
+#define IS_IPHONE_6P (IS_IPHONE && SCREEN_MAX_LENGTH == 736.0)
+#define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define IS_RETINA ([[UIScreen mainScreen] scale] >= 2.0)
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#define SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
+#define SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
+#define SCREEN_MAX_LENGTH (MAX(SCREEN_WIDTH, SCREEN_HEIGHT))
+#define SCREEN_MIN_LENGTH (MIN(SCREEN_WIDTH, SCREEN_HEIGHT))
+
+#define ApiBaseURL @"http://school.asvhi.in/ashvi/api/index.php/teachers"
+#define ApiBaseURLNew @"http://school.asvhi.in/ashvi/api/index.php/parents"
+
+#import "HomeViewController.h"
+#import "FavouritesViewController.h"
+#import "FavCell.h"
+#import "AFNetworking.h"
+#import "DashboardViewController.h"
+#import "ProgressHUD.h"
+#import "SideView.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+#import "ProfileViewController.h"
+#import "UIAlertView+Blocks.h"
+#import "SettingsViewController.h"
+#import "ChangeViewController.h"
+#import "HelpViewController.h"
+#import "AboutViewController.h"
+#import "TermsViewController.h"
+#import "AssignmentTableViewCell.h"
+#import "AssignmentsViewController.h"
+#import "AddViewController.h"
+#import "FavCellSmall.h"
+#import "ActionSheetPicker.h"
+#import "AttendanceViewController.h"
+#import "AttendanceCell.h"
+#import "RemarksCell.h"
+#import "RemarksViewController.h"
+#import "AddRemarksViewController.h"
+#import "NoticeViewController.h"
+#import "NoticeCell.h"
+#import "AddNoticeController.h"
+#import "StudentsViewController.h"
+#import "StudentCell.h"
+#import "StudentProfileViewController.h"
+#import "TimeViewController.h"
+#import "ADPageControl.h"
+#import "TimeCell.h"
+#import "CalendarViewController.h"
+#import "VRGCalendarView.h"
+#import "CallCell.h"
+#import "EventDetailViewController.h"
+#import "ResultsCell.h"
+#import "ResultsViewController.h"
+#import "ResultDetailsViewController.h"
+#import "ResultsDataCell.h"
+#import "ResultMarkViewController.h"
+#import "GallaryController.h"
+
+
+#endif /* AsvhiTeacher_Prefix_pch */
+
+/*
+ [4:55 PM, 11/23/2016] premkumar bsc: 531827
+ [4:55 PM, 11/23/2016] premkumar bsc: Email address: testteacher@mailinator.com
+*/

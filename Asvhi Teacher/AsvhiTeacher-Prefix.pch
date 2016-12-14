@@ -1,0 +1,21 @@
+//
+//  AsvhiTeacher-Prefix.pch
+//  
+//
+//  Created by Prem Kumar on 23/11/16.
+//
+//
+
+#ifndef AsvhiTeacher_Prefix_pch
+#define AsvhiTeacher_Prefix_pch
+
+#define ApiBaseURL @"http://api.asvhi.in/index.php/teachers/favclasses/classes_subjects"
+
+#import "HomeViewController.h"
+#import "FavouritesViewController.h"
+#import "FavCell.h"
+#import "AFNetworking.h"
+#import "DashboardViewController.h"
+#import "ProgressHUD.h"
+
+#endif /* AsvhiTeacher_Prefix_pch */
